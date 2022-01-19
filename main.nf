@@ -15,9 +15,6 @@ if(params.gpu_mode) log.info "accelerator\t\t : ${params.accelerator}"
 if(params.gpu_mode) log.info "n_accelerators\t : ${params.n_accelerators}"
 if(params.config == 'conf/google.config') log.info "gls_bootDiskSize : ${params.gls_bootDiskSize}"
 if(params.config == 'conf/google.config') log.info "gls_preemptible : ${params.gls_preemptible}"
-if(params.config == 'conf/google.config') log.info "zone\t\t\t : ${params.zone}"
-if(params.config == 'conf/google.config') log.info "network\t\t : ${params.network}"
-if(params.config == 'conf/google.config') log.info "subnetwork\t : ${params.subnetwork}"
 log.info ""
 
 if (!params.pbrun_mode) {
